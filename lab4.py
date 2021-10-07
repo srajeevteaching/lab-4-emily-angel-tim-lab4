@@ -8,7 +8,7 @@
 # ask user for package
 print("The purpose of this program is to calculate your total phone bill based on what package you have.")
 package = input("What package do you have?")
-package = package.strip().lower()
+package = str(package.strip().lower())
 
 if package == "purple":
     base_cost = 99.99
@@ -40,7 +40,7 @@ def phone_bill(base_cost, gb_over, base_gb, gb):
 total_cost = phone_bill(base_cost, gb_over, base_gb, gb)
 if package == "green":
     coupon = input("Do you have a coupon yes or no?")
-    coupon = coupon.strip().lower()
+    coupon = str(coupon.strip().lower())
     if coupon == "yes":
         if total_cost >= 75:
             total_cost = total_cost - 20
