@@ -44,7 +44,7 @@ if package == "green" or package == "orange":
 # calculate total cost
 if package == "green" or package == "orange":
     total_cost = phone_bill(base_cost, gb_over, base_gb, gb)
-elif pacage == "purple":
+elif package == "purple":
     total_cost = base_cost
 
 # ask user if they have coupon, and deduct from total cost if applicable
